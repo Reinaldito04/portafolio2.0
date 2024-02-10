@@ -1,0 +1,96 @@
+---
+import Card from "./Card.astro";
+---
+
+<section id="project">
+  <div class="container">
+    <h2 class="text-center">Proyectos</h2>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6">
+        
+            <Card
+            title='App de Consultas Medicas',
+            body='Una aplicación de escritorio para el control de consultas,historias y placas medicas.Permite al usuario (doctor) tener control de todos sus pacientes registrados,además de su respetiva información.',
+            repo='https://github.com/Reinaldito04/App-Consultas-y-Historias-Medicas',
+            img="753shots_so.png",
+            tecnologies={["/svg/python.svg","/svg/qt.svg"]}
+            />
+          </div>
+          <div class="col-md-6 col-12">
+            <Card
+            title="App para Horarios Escolares",
+            body="Una aplicación de escritorio para el control de horarios escolares del Instituto Universitario de Administración Industrial (IUTA) ,permite mantener el control de los profesores,aulas y sesiones de las diversas sedes,entre otras funciones",
+            repo="https://github.com/Reinaldito04/IUTA----HORARIOS",
+            img="489shots_so.png",
+            tecnologies={["/svg/python.svg","/svg/qt.svg","/svg/pdf.svg"]}
+            
+            
+            />
+          </div>
+          <div class="col-md-6">
+            <Card 
+            title="API de Divisas",
+            body="Una API realizada para la recolección directa con la web del banco central de Venezuela , permitiendo a los usuarios obtener la cotización de diferentes divisas.",
+            repo="https://github.com/Reinaldito04/API-bcv",
+            img="339shots_so.png",
+            tecnologies={["/svg/python.svg","/svg/fastapi.svg"]}
+            
+            />
+          </div>
+          <div class="col-md-6">
+            <Card
+            title="Periodico Escolar",
+            body="Periodico Escolar con la capacidad de subir noticias , acotecimientos importantes , curiosidades ,etc , además cuenta con información referente a la institución",
+            repo="https://github.com/Reinaldito04/Periodico",
+            img="periodico.png",
+            tecnologies={["/svg/php.svg","/svg/jquery.svg","/svg/boostrap.svg"]}
+            />
+          </div>
+          <div class="col-md-6">
+            <Card
+            title="Convertidor de Divisas",
+            body="Esta aplicación te permite convertir diversas monedas ,usando los datos actualizados de la API de Divisas.",
+            img="204shots_so.png",
+            repo="https://github.com/Reinaldito04/Convertidor",
+            tecnologies={["/svg/nextjs.svg","/svg/react.svg"]}
+            />
+          </div>
+            
+       
+        
+      </div>
+    </div>
+  </div>
+</section>
+
+<style>
+  @media (max-width: 440px){
+    section{
+      height: auto !important;
+      margin-bottom: 20%;
+    }
+  }
+  section {
+    border-top: 0.5px solid white;
+    text-wrap: balance;
+    height: 140dvh;
+  }
+
+  h2 {
+    margin-left: 20px;
+    border-bottom: 1px solid transparent;
+    border-image: linear-gradient(
+      to right,
+      rgb(247, 247, 247),
+      #665656,
+      rgb(51, 46, 46)
+    ); /* Puedes ajustar los colores según tus preferencias */
+    border-image-slice: 1;
+    width: 35%;
+    margin: 0 auto;
+
+    margin-top: 20px;
+    font-size: 1.5rem;
+  }
+</style>

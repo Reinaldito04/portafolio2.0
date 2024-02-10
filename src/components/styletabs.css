@@ -1,0 +1,128 @@
+/* Estilos para las pestañas */
+
+.center-content {
+  margin-top: 20px !important;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column; /* Alinea verticalmente el contenido */
+  margin-bottom: 20px;
+  margin: 0 auto;
+
+}
+
+
+.tabs {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+
+  align-items: center;
+  flex-direction: row;
+  margin: 0 auto;
+}
+.ul-tab{
+  background-color: rgba(0, 0, 0, 0.5);
+  width: 800px;
+}
+ul{
+  border:2px solid white;
+  list-style: none;
+  border-radius: 15px;
+
+}
+.tabs button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+ 
+  padding: 10px 20px;
+  margin: 0px !important;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 5px;
+  margin-left: 5px !important;
+  transition: background-color 0.3s ease;
+}
+.icon{
+  margin-top: 5px;
+  width: 40px;
+  height: 55px;
+  object-fit: cover;
+  object-fit: cover;
+  background-color: white;
+  padding: 1px;
+  border-radius: 25px 30px 15px;
+}
+.icon:hover{
+  transform: translateY(-10px);
+  transition: all 0.5s;
+}
+.ul-tab{
+  display: flex;
+  flex-wrap: wrap; 
+  justify-content: center;
+}
+.ul-tab li{
+  width: 30%; /* Establece que cada elemento ocupe el 20% del ancho del contenedor */
+  box-sizing: border-box;
+}
+.tabs button:hover {
+  color: rgba(0, 0, 0, 0.2);
+}
+
+.tabs button.active {
+  background-color: #0056b3; /* Color de la pestaña activa */
+ 
+}
+
+/* Estilos para el área de habilidades */
+.skills ul {
+  list-style: none;
+  padding: 0;
+}
+
+.skills ul li {
+  margin-bottom: 10px;
+  font-size: 18px;
+}
+
+.skills ul li:last-child {
+  margin-bottom: 0;
+}
+.tabs {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.tabs button {
+  background-color: #f0f0f0; /* Color por defecto para los botones */
+  color: #444;
+  border: none;
+  padding: 10px 20px;
+  margin: 0 10px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease; /* Agrega una transición para el color */
+}
+
+.tabs button.active {
+  background-color: #007bff; /* Color para el botón activo */
+  color: white;
+}
+
+
+@media (max-width: 440px){
+  .ul-tab li{
+    width: 50%; /* Establece que cada elemento ocupe el 20% del ancho del contenedor */
+    box-sizing: border-box;
+  }
+  .ul-tab{
+    background-color: rgba(0, 0, 0, 0.5);
+    width: 400px;
+  }
+  .tabs button {
+    padding: 10px 10px;
+  }
+}

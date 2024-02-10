@@ -1,0 +1,94 @@
+---
+import SkillsTab from './Tabs'; // Importa el componente SkillsTab desde el archivo SkillsTab.js
+
+---
+<section id="skills">
+  <div class="container">
+    <div>
+      <h2>Skills</h2>
+    </div>
+
+    <div class="container contenedor-skills">
+      <!-- Contenedor de Herramientas -->
+      <div class="row">
+        <div class="col-md-12 col-12 text-center align-items-center ">
+        <SkillsTab client:load/>
+        </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <style>
+   
+    svg:hover {
+      transform: translateY(-10px);
+      transition: all 0.5s;
+    }
+    .container-herramientas,
+    .container-tecnologias {
+      border-radius: 25px;
+      height: 100%;
+      margin-top: 20px;
+      border: 2px solid white;
+    }
+    .container-herramientas:hover,
+    .container-tecnologias:hover {
+      transform: translateY(-10px);
+      transition: all 0.5s;
+    }
+    svg {
+      width: 50%;
+    }
+    h4 {
+      text-align: center;
+      margin: 0 auto;
+    }
+    section {
+      border-top: 0.5px solid white;
+      text-wrap: balance;
+      text-align: center;
+      height: 100dvh;
+    }
+
+    h2 {
+      margin-left: 20px;
+      border-bottom: 1px solid transparent;
+      border-image: linear-gradient(
+        to right,
+        rgb(247, 247, 247),
+        #665656,
+        rgb(51, 46, 46)
+      ); /* Puedes ajustar los colores según tus preferencias */
+      border-image-slice: 1;
+      width: 35%;
+      margin: 0 auto;
+
+      margin-top: 20px;
+      font-size: 1.5rem;
+    }
+    @media (max-width: 800px) {
+      section {
+        height: 100%;
+        margin-bottom: 25px;
+      }
+      svg {
+        width: 50px;
+      }
+      .container-herramientas,
+      .container-tecnologias {
+        display: flex;
+        flex-direction: column;
+      }
+
+      .row {
+        display: flex;
+        flex-wrap: wrap;
+      }
+
+      .col-md-4 {
+        flex-basis: 50%; /* Establecer el ancho al 50% para que haya un máximo de 2 por fila */
+      }
+    }
+  </style>
+</section>

@@ -1,0 +1,33 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Card from '../components/Card.astro';
+import Header from '../components/Header.astro';
+import Navbar from '../components/Navbar.astro';
+import AboutMe from '../components/AboutMe.astro';
+import Keyboard from '../components/Keyboard.astro';
+import Skills from '../components/Skills.astro';
+import Projects from '../components/Projects.astro';
+import Contact from '../components/Contact.astro';
+---
+
+<Layout title="Portfolio - Reinaldo Bellorin.">
+	<Navbar/>
+	<Header/>
+	<AboutMe/>
+	<Keyboard/>
+	<Skills/>
+	
+	<Projects/>
+	<Contact/>
+</Layout>
+
+<style>
+	body{
+		background: linear-gradient(to right, #4f4f4f2e 1px, transparent 1px),
+              linear-gradient(to bottom, #4f4f4f2e 1px, transparent 1px) !important;
+			  mask-image: radial-gradient(ellipse at 50% 0%, #000 70%, transparent 100%) !important;
+			  background-size: 14px 24px !important;
+
+
+	}
+</style>

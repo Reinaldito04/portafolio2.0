@@ -1,0 +1,64 @@
+<footer>
+    Pulsar <kbd>Cmd</kbd> + <kbd>K</kbd> para abrir la paleta de comandos.
+</footer>
+<ninja-keys placeholder="Buscar..."
+hideBreadcrumbs
+>
+
+
+
+</ninja-keys>
+<script>
+
+import "ninja-keys";
+const ninja = document.querySelector("ninja-keys");
+ninja.data=[
+    {
+        id:'Github',
+        title:"Abrir Github",
+        hotkey:'ctrl+g',
+        section:'GitHub',
+        handler:()=>{
+            window.location.href="https://github.com/Reinaldito04";
+        }
+        
+    },
+    {
+        id:'LinkedIn',
+        title:"Abrir LinkedIn",
+        hotkey:'ctrl+l',
+        section:'LinkedIn',
+        handler:()=>{
+            window.location.href="https://www.linkedin.com/in/reinaldo-bellorin-318528266/";
+        }
+    },
+    {
+        id:'whatsapp',
+        title:"Abrir WhatsApp",
+        hotkey:'ctrl+w',
+        section:'WhatsApp',
+        handler:()=>{
+            window.location.href="https://wa.me/+584248415403";
+        }
+    }
+]
+
+</script>
+
+<style>
+     @media (max-width: 768px) {
+        footer{
+            display: none;
+        }
+     }
+    footer{
+        background-color: rgba(0, 0, 0, 0.2);
+        border-top: 1px solid black;
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+        padding: 8px 16px;
+        text-align: center;
+        z-index: 999;
+    }
+</style>

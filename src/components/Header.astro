@@ -1,0 +1,233 @@
+---
+
+---
+
+<section class="custom-section">
+  <div class="row contenedor-principal">
+    <div class="col-md-6 order-md-1 order-2">
+      <div class="contenedor-titulo text-center">
+        <h1>REINALDO</h1>
+        <h1>BELLORIN</h1>
+        <h2>DEVELOPER</h2>
+      </div>
+
+      <div class="contenedor-info">
+        
+        <p><a href="https://drive.google.com/file/d/1Ebxi2qSVa0yB92LjGFpS-hhHCkXJCckX/view?usp=sharing">DESCARGAR CV</a></p>
+
+        <p><a href="#contact">CONTACTAME
+          </a></p>
+        <p><a href="https://github.com/Reinaldito04/portfolio2.0/tree/main/portfolio">
+          VER CODIGO FUENTE</a></p>
+      </div>
+    </div>
+
+    <div class="col-md-6 order-md-2 order-1">
+      <div class="container-fluid container-header">
+        <div class="container-img img-div custom-img">
+          <img
+            class="img-fluid"
+            src="https://i.pinimg.com/564x/b1/72/67/b17267e12b5ba6970e05421d04da95ac.jpg"
+          />
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="main__action">
+    <a class="main__scroll" href="#">
+      <div class="main__scroll-box">
+        <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+          <path d="M0 0h24v24H0z" fill="none"></path>
+          <path
+            d="M11.9997 13.1716L7.04996 8.22186L5.63574 9.63607L11.9997 16L18.3637 9.63607L16.9495 8.22186L11.9997 13.1716Z"
+            fill="white"></path>
+        </svg>
+      </div>
+      <span class="main__scroll-text">Scroll</span>
+    </a>
+  </div>
+</section>
+
+<style>
+  a{
+    text-decoration: none;
+    color: white;
+  }
+  .main__action {
+    margin-top: 25% !important;
+  }
+  @media (max-width: 440px){
+    .contenedor-titulo{
+    margin-right: -40px !important;
+    
+    }
+    .img-div{
+      margin-right: -40px !important;
+    
+    }
+    .img-div img{
+      margin-right: -20px !important;
+     
+      border-radius: 50%;
+    }
+  }
+  /* Estilos específicos para pantallas pequeñas (tablets y móviles) */
+  @media (max-width: 768px) {
+    .img-div {
+      margin-top: 45%;
+      
+      width: 50%;
+      justify-content: center;
+      align-items: center;
+      display: flex;
+      margin-bottom: 10px !important;
+    }
+    .contenedor-titulo{
+   
+      text-align: center !important;
+    }
+    img {
+      height: 100px !important;
+      width: 100px !important;
+      margin-bottom: 100px;
+      margin-top: 50px !important;
+    }
+    section {
+      height: 100% !important;
+    }
+
+    h1 {
+      font-size: 2.5rem !important;
+      text-align: center !important;
+    }
+
+    h2 {
+      font-size: 2rem !important;
+      text-align: center !important;
+    }
+    .contenedor-info {
+      display: flex;
+      flex-direction: column;
+    }
+    .main__action {
+      display: none !important;
+    }
+    /* Otros estilos para pantallas pequeñas si es necesario */
+  }
+  .contenedor-principal {
+    margin-left: 20% !important;
+  }
+  /* Estilos generales */
+  section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    height: 100vh; /* Ajustar según sea necesario */
+  }
+
+  .row {
+    margin: 0; /* Eliminar el espacio negativo del contenedor de Bootstrap */
+  }
+
+  .contenedor-titulo {
+    text-align: center;
+    margin-top: -30%;
+    margin-left: -50%;
+  }
+
+  h1 {
+    line-height: 0.8;
+    font-size: 7rem;
+    margin: 0;
+    font-style: italic;
+    cursor: pointer; /* Agregado para indicar interactividad */
+  }
+
+  h1:hover {
+    color: #136388;
+    transition: all 0.3s ease-in-out;
+  }
+
+  h2 {
+    font-size: 4rem;
+    text-align: center;
+    color: #6c757d;
+    font-style: italic;
+    cursor: pointer; /* Agregado para indicar interactividad */
+  }
+
+  h2:hover {
+    transition: all 0.3s ease-in-out;
+    color: #ffcc00;
+  }
+
+  img {
+    width: 250px;
+    height: 250px;
+    border-radius: 25px;
+    margin-top: -100px !important;
+    cursor: pointer; /* Agregado para indicar interactividad */
+  }
+
+  .contenedor-info {
+    border-radius: 25px;
+    text-align: center;
+    margin-left: -50%;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  p {
+    margin-left: 10px;
+    cursor: pointer; /* Agregado para indicar interactividad */
+  }
+
+  p:hover,a:hover {
+    color: #ff6347;
+    transition: all 0.5s;
+  }
+
+  /* Otras reglas de estilo según sea necesario */
+
+  /* Reset de estilo */
+  a {
+    font-size: 1.2rem;
+    text-decoration: none;
+  }
+
+  /* Estilos principales */
+  .main__scroll-text {
+    color: rgb(232, 232, 240);
+  }
+
+  .main__action {
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    position: absolute;
+  }
+
+  .main__scroll-box {
+    animation: scroll-down 3.5s infinite;
+  }
+
+  /* Animate scroll icon */
+  @keyframes scroll-down {
+    0%,
+    100% {
+      transform: translateY(0rem);
+      opacity: 1;
+    }
+
+    35% {
+      transform: translateY(1rem);
+      opacity: 0;
+    }
+
+    70% {
+      transform: translateY(-1rem);
+      opacity: 0;
+    }
+  }
+</style>

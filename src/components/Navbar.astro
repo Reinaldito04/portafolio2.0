@@ -1,0 +1,75 @@
+---
+---
+
+<nav class="navbar ">
+    <div class="container-fluid">
+        <img src="logo.png">
+        <ul>
+            <li><a href="#about">
+                Sobre mi
+            </a></li>
+            <li>
+                <a href="#skills">
+
+                    Skills
+                </a>
+
+            </li>
+            
+            <li>
+                <a href="#project">
+                    Portafolio
+                </a>
+                </li> 
+
+            <li>
+                <a href="#contact">
+                    Contacto
+                </a>
+                </li>
+        </ul>
+    </div>
+</nav>
+
+<style>
+    img{
+        width:4%;
+    }
+    a{
+        list-style: none;
+        text-decoration: none;
+        color: white;
+    }
+nav{
+    border-bottom: 0.5px  solid #ccc;
+    position: sticky;
+    z-index: 999;
+    top: 0;
+    background-color: rgba(0, 0, 0, 0.4);
+
+}
+ul{
+    display: flex;
+    margin: 0 auto;
+    gap: 2rem;
+    justify-content: center;
+    border: none;
+    align-items: center;
+}
+a:hover{
+    color: #136388;
+    transition: all 0.3s ease-in-out;
+
+   
+}
+li{
+    list-style: none;
+    font-weight: 400;
+    font-size: 1.2rem;
+}
+@media (max-width: 768px) {
+    nav{
+        display: none;
+    }
+}
+</style>
