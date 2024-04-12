@@ -13,6 +13,7 @@ import {DeviconFastapi} from './iconos/fastapi';
 import {SkillIconsNodejsDark} from './iconos/node';
 import {DeviconSqliteWordmark} from "./iconos/sqlite";
 import {LogosMysql} from './iconos/mysql';
+import {TeenyiconsNextjsSolid} from "./iconos/next";
 import {DeviconPostgresqlWordmark} from "./iconos/postgre";
 const SkillsTab = () => {
   const [activeTab, setActiveTab] = useState("frontend");
@@ -106,7 +107,13 @@ const SkillsTab = () => {
               FastApi
               </p>
               </li>
-
+              <li>
+              
+              <TeenyiconsNextjsSolid className="icon"/>
+              <p>
+              NextJS
+              </p>
+              </li>
               <li>
               
               <SkillIconsNodejsDark className="icon"/>

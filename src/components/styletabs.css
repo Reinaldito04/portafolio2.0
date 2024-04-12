@@ -126,3 +126,35 @@ ul{
     padding: 10px 10px;
   }
 }
+
+.tabs button {
+  border: none;
+  background-color: transparent;
+  color: white;
+  position: relative;
+}
+
+.tabs button.active::after {
+  content: ''; /* Creamos un pseudo-elemento */
+  position: absolute; /* Lo posicionamos con respecto al botón */
+  left: 0; /* Lo colocamos al principio del botón */
+  bottom: 0; /* Lo colocamos en la parte inferior del botón */
+  width: 100%; /* Comenzamos con un ancho completo */
+  height: 3px; /* Grosor del borde */
+  background-color: gray;
+  transition: width 0.4s ease; /* Animamos solo el ancho */
+}
+
+.tabs button.active:hover::after { 
+  width: 0; /* Para que el borde inferior desaparezca gradualmente cuando el botón está activo */
+}
+
+.tabs button:hover{
+  color: #928c8c;
+}
+
+.tabs button.active {
+  background-color: transparent;
+  border-radius: 0;
+  transition: background-color 0.4s ease; /* Agregamos transición para el cambio de color de fondo */
+}
