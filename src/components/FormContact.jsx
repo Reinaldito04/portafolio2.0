@@ -88,7 +88,7 @@ function FormContact() {
                 <label htmlFor="message">Mensaje</label>
             </div>
             <div className="container contenedor-boton">
-                <button onClick={enviarFormulario}>
+                <button className='botonForm' onClick={enviarFormulario}>
                     <div className="svg-wrapper-1">
                         <div className="svg-wrapper">
                             <svg
