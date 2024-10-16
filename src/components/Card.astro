@@ -183,4 +183,54 @@ const { repo, title, body, img, tecnologies, Despliegue ,repoBackend} = Astro.pr
 	.boton{
     margin-left: 10px !important;
   }
+
+  /* Mantener una altura máxima para las imágenes en móviles */
+@media (max-width: 768px) {
+  .card-img {
+    height: auto; /* Permitir que la imagen se adapte */
+    max-height: auto; /* Limitar la altura máxima en móviles */
+    object-fit: cover; /* Asegurar que la imagen mantenga el enfoque */
+  }
+
+  .card {
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+
+  /* Ajustar padding en la card para pantallas pequeñas */
+  .container-card {
+    padding: 10px;
+    height: auto; /* Ajuste automático de la altura */
+    max-height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .card-text {
+    font-size: 0.9rem; /* Reducir un poco el tamaño del texto */
+    word-wrap: break-word; /* Romper palabras largas */
+    overflow-wrap: break-word; /* Ajustar para evitar desbordes */
+    max-height: 50px; /* Limitar la altura del contenido */
+    overflow-y: auto; /* Añadir scroll en caso de mucho texto */
+  }
+  h5{
+    font-size: 1rem;
+  }
+  /* Ajustar los botones */
+  .button {
+    padding: 0.2rem 1rem;
+    font-size: 0.50rem;
+    line-height: 1rem;
+    gap: 0.5rem;
+  }
+
+  /* Ajustar tecnologías */
+  .tecnologias-usadas {
+    width: 30px;
+    height: 30px;
+  }
+}
+
 </style>
