@@ -7,9 +7,10 @@ interface Props {
   img: string;
   tecnologies: string[];
   Despliegue?: string | null;
+  idTitle: string;
 }
 
-const { repo, title, body, img, tecnologies, Despliegue ,repoBackend} = Astro.props;
+const { repo, title, body, img, tecnologies, Despliegue ,repoBackend,idTitle} = Astro.props;
 ---
 
 <div class="card bg-dark text-white">
@@ -18,7 +19,7 @@ const { repo, title, body, img, tecnologies, Despliegue ,repoBackend} = Astro.pr
     <div
       class="container container-card d-flex align-items-center justify-content-center"
     >
-      <h5 class="card-title">{title}</h5>
+      <h5 class="card-title" id={idTitle}> {title}</h5>
       <p class="card-text">{body}</p>
       <div class="tecnologias">
         {

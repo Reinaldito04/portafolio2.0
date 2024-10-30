@@ -1,75 +1,100 @@
----
----
-
-<nav class="navbar ">
+<!-- HTML Structure -->
+<nav class="navbar">
     <div class="container-fluid">
-        <img src="logo.png">
-        <ul>
-            <li><a href="#about">
-                Sobre mi
-            </a></li>
-            <li>
-                <a href="#skills">
-
-                    Skills
-                </a>
-
-            </li>
-            
-            <li>
-                <a href="#project">
-                    Portafolio
-                </a>
-                </li> 
-
-            <li>
-                <a href="#contact">
-                    Contacto
-                </a>
-                </li>
-        </ul>
+      <img src="logo.png" />
+      <ul>
+        <li><a id="aboutLink" href="#about">Sobre mí</a></li>
+        <li><a id="skillsLink" href="#skills">Skills</a></li>
+        <li><a id="portfolioLink" href="#project">Portafolio</a></li>
+        <li><a id="contactLink" href="#contact">Contacto</a></li>
+      </ul>
+      <div>
+        <button id="butonIdioma"></button>
+      </div>
     </div>
-</nav>
-
-<style>
-    img{
-        width:4%;
+  </nav>
+  
+  <script is:inline>
+    let currentLanguage = 'en';
+    let texts = {};
+  
+    async function loadTexts() {
+      try {
+        const enResponse = await fetch('/locales/en.json');
+        const esResponse = await fetch('/locales/es.json');
+  
+        if (!enResponse.ok || !esResponse.ok) {
+          throw new Error("Error loading language files");
+        }
+  
+        const en = await enResponse.json();
+        const es = await esResponse.json();
+  
+        texts = { en, es };
+        updateTexts();
+      } catch (error) {
+        console.error("Error loading language files:", error);
+      }
     }
-    a{
-        list-style: none;
-        text-decoration: none;
-        color: white;
+  
+    function updateTexts() {
+      document.getElementById("butonIdioma").textContent = texts[currentLanguage].changeLanguage;
+      document.getElementById("aboutLink").textContent = texts[currentLanguage].about;
+      document.getElementById("skillsLink").textContent = texts[currentLanguage].skills;
+      document.getElementById("portfolioLink").textContent = texts[currentLanguage].project;
+      document.getElementById("contactLink").textContent = texts[currentLanguage].contact;
+      document.getElementById("AboutMeText").textContent = texts[currentLanguage].aboutMeText;
     }
-nav{
-    border-bottom: 0.5px  solid #ccc;
-    position: sticky;
-    z-index: 999;
-    top: 0;
-    background-color: rgba(0, 0, 0, 0.4);
-
-}
-ul{
-    display: flex;
-    margin: 0 auto;
-    gap: 2rem;
-    justify-content: center;
-    border: none;
-    align-items: center;
-}
-a:hover{
-    color: #136388;
-    transition: all 0.3s ease-in-out;
-
-   
-}
-li{
-    list-style: none;
-    font-weight: 400;
-    font-size: 1.2rem;
-}
-@media (max-width: 768px) {
-    nav{
+  
+    async function changeLanguage() {
+      currentLanguage = currentLanguage === 'en' ? 'es' : 'en';
+      updateTexts();
+    }
+  
+    document.addEventListener("DOMContentLoaded", async function () {
+      await loadTexts(); // Cargar textos al inicio
+      const button = document.getElementById("butonIdioma");
+      button.addEventListener("click", changeLanguage);
+    });
+  </script>
+  
+  <style>
+    img {
+      width: 4%;
+    }
+    a {
+      list-style: none;
+      text-decoration: none;
+      color: white;
+    }
+    nav {
+      border-bottom: 0.5px solid #ccc;
+      position: sticky;
+      z-index: 999;
+      top: 0;
+      background-color: rgba(0, 0, 0, 0.4);
+    }
+    ul {
+      display: flex;
+      margin: 0 auto;
+      gap: 2rem;
+      justify-content: center;
+      border: none;
+      align-items: center;
+    }
+    a:hover {
+      color: #136388;
+      transition: all 0.3s ease-in-out;
+    }
+    li {
+      list-style: none;
+      font-weight: 400;
+      font-size: 1.2rem;
+    }
+    @media (max-width: 768px) {
+      nav {
         display: none;
+      }
     }
-}
-</style>
+  </style>
+  

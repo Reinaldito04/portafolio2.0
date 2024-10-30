@@ -68,6 +68,16 @@ const projects = [
     tecnologies: ["/svg/nextjs.svg", "/svg/react.svg"]
   }
 ];
+
+function generateId(title) {
+  return title
+    .toLowerCase() // Convertir a minúsculas
+    .replace(/[^a-z0-9\s]/g, '') // Eliminar caracteres especiales
+    .replace(/\s+/g, '-') // Reemplazar espacios con guiones
+    .trim(); // Eliminar espacios al principio y al final
+}
+
+
 ---
 
 <section id="project">
@@ -77,7 +87,8 @@ const projects = [
       <div class="row">
         {projects.map((project) => (
           <div class="col-md-6">
-            <Card
+           <Card
+              idTitle={generateId(project.title)} 
               title={project.title}
               body={project.body}
               repo={project.repo}
