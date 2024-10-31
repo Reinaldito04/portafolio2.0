@@ -3,6 +3,68 @@
   "skills": "Habilidades",
   "project": "Portafolio",
   "contact": "Contacto",
-  "changeLanguage": "Cambiar a Inglés",
-  "aboutMeText" : "Hola, soy Reinaldo Bellorin, un apasionado desarrollador web graduado en TSU Informática. Me especializo en el desarrollo utilizando Python, mi lenguaje favorito, para crear aplicaciones web eficientes y poderosas. Además, encuentro inspiración en la música de Gustavo Cerati, cuyas melodías me acompañan en mi proceso creativo. Mi lema es 'no tengo enemigos', una filosofía que refleja mi enfoque colaborativo y positivo hacia los desafíos. Estoy emocionado por contribuir a proyectos innovadores y seguir creciendo como profesional en el mundo del desarrollo web."
+  "aboutMeTitle" : "¿Quien Soy?",
+  "proyectTitle" : "Proyectos",
+  "cvtitle":"DESCARGAR CV",
+  "contactTitle":"CONTACTAME",
+  "codeTitle":"VER CODIGO FUENTE",
+  "changeLanguage": "🇺🇸",
+  "aboutMeText": "Hola, soy Reinaldo Bellorin, un apasionado desarrollador web graduado en TSU Informática. Me especializo en el desarrollo utilizando Python, mi lenguaje favorito, para crear aplicaciones web eficientes y poderosas. Además, encuentro inspiración en la música de Gustavo Cerati, cuyas melodías me acompañan en mi proceso creativo. Mi lema es 'no tengo enemigos', una filosofía que refleja mi enfoque colaborativo y positivo hacia los desafíos. Estoy emocionado por contribuir a proyectos innovadores y seguir creciendo como profesional en el mundo del desarrollo web. ",
+  "projects": [
+    {
+      "idTitle":"sistema-administrativo-para-la-gestin-de-inmobiliaria-la-plata",
+      "idBody": "sistema-administrativo-para-la-gestin-de-inmobiliaria-la-plata-body",
+      
+      "title": "Sistema Administrativo para la gestión de inmobiliaria La Plata",
+      "body": "Este sistema permite la gestión integral de una inmobiliaria, facilitando el manejo de pagos, deudas, contratos, inquilinos y propiedades. Los administradores pueden registrar y actualizar información de los inmuebles, gestionar contratos de alquiler, llevar un control detallado de los pagos realizados por los inquilinos y de las deudas pendientes. Además, cuenta con reportes automatizados y un módulo para la renovación de contratos."
+    },
+    {
+      "idTitle":"app-de-tareas",
+      "idBody": "app-de-tareas-body",
+      "title": "App de Tareas",
+      "body": "Una app Movil realizada con Dart/Flutter, conectada con Firebase para acceder con Google y almacenar los datos de sesión, permite añadir sus tareas, modificarlas y compartirlas con demás usuarios mediante su correo electrónico. Además, está conectada a un backend realizado en Python para el manejo de las tareas y diversos datos."
+    },
+    {
+      "idTitle":"portafolio-web-de-ilustrador-digital",
+      "idBody": "portafolio-web-de-ilustrador-digital-body",
+      "title": "Portafolio Web de Ilustrador Digital",
+      "body": "Una página web con rutas dinámicas, SSR realizada con Next.js / React, con la creación de API para obtener las diversas imágenes de la galería, permitiendo al usuario elegir cuál visualizar gracias a la URL."
+    },
+    {
+      "idTitle":"correo-temporal",
+      "idBody": "correo-temporal-body",
+      "title": "Correo Temporal",
+      "body": "Una aplicación de Frontend conectada a una API que proporciona correos temporales, permitiendo recibir correos electrónicos de varias direcciones en tiempo real."
+    },
+    {
+      "idTitle":"app-de-consultas-mdicas",
+      "idBody": "app-de-consultas-mdicas-body",
+      "title": "App de Consultas Médicas",
+      "body": "Una aplicación de escritorio para el control de consultas, historias y placas médicas. Permite al usuario (doctor) tener control de todos sus pacientes registrados, además de su respectiva información."
+    },
+    {
+      "idTitle":"app-para-horarios-escolares",
+      "idBody": "app-para-horarios-escolares-body",
+      "title": "App para Horarios Escolares",
+      "body": "Una aplicación de escritorio para el control de horarios escolares del Instituto Universitario de Administración Industrial (IUTA). Permite mantener el control de los profesores, aulas y sesiones de las diversas sedes, entre otras funciones."
+    },
+    {
+      "idTitle":"api-de-divisas",
+      "idBody": "api-de-divisas-body",
+      "title": "API de Divisas",
+      "body": "Una API realizada para la recolección directa con la web del Banco Central de Venezuela, permitiendo a los usuarios obtener la cotización de diferentes divisas."
+    },
+    {
+      "idTitle":"peridico-escolar",
+      "idBody": "peridico-escolar-body",
+      "title": "Periódico Escolar",
+      "body": "Periódico Escolar con la capacidad de subir noticias, acontecimientos importantes, curiosidades, etc., además cuenta con información referente a la institución."
+    },
+    {
+      "idTitle":"convertidor-de-divisas",
+      "idBody": "convertidor-de-divisas-body",
+      "title": "Convertidor de Divisas",
+    "body": "Esta aplicación te permite convertir diversas monedas, usando los datos actualizados de la API de Divisas."
+    }
+  ]
 }

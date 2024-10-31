@@ -4,6 +4,67 @@
   "skills": "Skills",
   "project": "Portfolio",
   "contact": "Contact",
-  "changeLanguage": "Change to Spanish",
-  "aboutMeText" : "Hello, I am Reinaldo Bellorin, a passionate web developer with a degree in Computer Science (TSU). I specialize in development using Python, my favorite language, to create efficient and powerful web applications. I also find inspiration in the music of Gustavo Cerati, whose melodies accompany me in my creative process. My motto is 'I have no enemies,' a philosophy that reflects my collaborative and positive approach to challenges. I am excited to contribute to innovative projects and continue growing as a professional in the world of web development."
+  "aboutMeTitle": "Who am I?",
+  "proyectTitle" : "Projects",
+  "cvtitle":"DOWLOAND CV",
+  "contactTitle":"CONTACT ME",
+  "codeTitle":"SEE SOURCE CODE",
+  "changeLanguage": "🇪🇸",
+  "aboutMeText" : "Hello, I am Reinaldo Bellorin, a passionate web developer with a degree in Computer Science (TSU). I specialize in development using Python, my favorite language, to create efficient and powerful web applications. I also find inspiration in the music of Gustavo Cerati, whose melodies accompany me in my creative process. My motto is 'I have no enemies,' a philosophy that reflects my collaborative and positive approach to challenges. I am excited to contribute to innovative projects and continue growing as a professional in the world of web development.",
+  "projects": [
+    {
+      "idTitle": "sistema-administrativo-para-la-gestin-de-inmobiliaria-la-plata",
+      "idBody":"sistema-administrativo-para-la-gestin-de-inmobiliaria-la-plata-body",
+      "title": "Administrative System for Real Estate Management La Plata",
+      "body": "This system enables comprehensive real estate management, facilitating the handling of payments, debts, contracts, tenants, and properties. Administrators can register and update property information, manage rental contracts, keep a detailed record of tenant payments, and track outstanding debts. Additionally, it includes automated reports and a module for contract renewal."
+    },
+    {
+      "idTitle": "app-de-tareas",
+      "idBody":"app-de-tareas-body",
+      "title": "Task App",
+      "body": "A mobile app developed with Dart/Flutter, connected with Firebase for Google login and session data storage. It allows users to add, edit, and share tasks with other users via email. It is also connected to a backend built in Python for task management and additional data handling."
+    },
+    {
+      "idTitle": "portafolio-web-de-ilustrador-digital",
+      "idBody":"portafolio-web-de-ilustrador-digital-body",
+      "title": "Digital Illustrator Web Portfolio",
+      "body": "A web page with dynamic routes and SSR built with Next.js / React, including API creation to retrieve various gallery images, allowing the user to select which to view through the URL."
+    },
+    {
+      "idTitle": "correo-temporal",
+      "idBody":"correo-temporal-body",
+      "title": "Temporary Email",
+      "body": "A frontend application connected to an API that provides temporary emails, allowing users to receive emails from various addresses in real-time."
+    },
+    {
+      "idTitle": "app-de-consultas-mdicas",
+      "idBody":"app-de-consultas-mdicas-body",
+      "title": "Medical Consultations App",
+      "body": "A desktop application for managing consultations, medical histories, and X-rays. It allows the user (doctor) to keep track of all registered patients and their respective information."
+    },
+    {
+      "idTitle": "app-para-horarios-escolares",
+      "idBody":"app-para-horarios-escolares-body",
+      "title": "School Schedule App",
+      "body": "A desktop application for managing school schedules at the Industrial Administration University Institute (IUTA). It helps manage teachers, classrooms, and sessions across different campuses, among other functions."
+    },
+    {
+      "idTitle": "api-de-divisas",
+      "idBody":"api-de-divisas-body",
+      "title": "Currency API",
+      "body": "An API developed for direct data collection from the Central Bank of Venezuela's website, allowing users to obtain currency exchange rates."
+    },
+    {
+      "idTitle": "peridico-escolar",
+      "idBody":"peridico-escolar-body",
+      "title": "School Newspaper",
+      "body": "A school newspaper with the ability to publish news, important events, curiosities, etc., along with information related to the institution."
+    },
+    {
+      "idTitle": "convertidor-de-divisas",
+      "idBody":"convertidor-de-divisas-body",
+      "title": "Currency Converter",
+      "body": "This application allows you to convert various currencies using up-to-date data from the Currency API."
+    }
+  ]
 }

@@ -1,0 +1,102 @@
+<button id="butonIdioma"></button>
+
+<script is:inline>
+  let currentLanguage = "en";
+  let texts = {};
+
+  async function loadTexts() {
+    try {
+      const enResponse = await fetch("/locales/en.json");
+      const esResponse = await fetch("/locales/es.json");
+
+      if (!enResponse.ok || !esResponse.ok) {
+        throw new Error("Error loading language files");
+      }
+
+      const en = await enResponse.json();
+      const es = await esResponse.json();
+
+      texts = { en, es };
+      updateTexts();
+    } catch (error) {
+      console.error("Error loading language files:", error);
+    }
+  }
+
+  function updateTexts() {
+    const elementsToUpdate = {
+      butonIdioma: "changeLanguage",
+      aboutLink: "about",
+      skillsLink: "skills",
+      portfolioLink: "project",
+      contactLink: "contact",
+      AboutMeText: "aboutMeText",
+      aboutmeTitle: "aboutMeTitle",
+      proyectTitle: "proyectTitle",
+      cvtitle: "cvtitle",
+      contactTitle: "contactTitle",
+      codeTitle: "codeTitle",
+      contactTitleSection: "contact",
+    };
+
+    // Actualizar elementos generales
+    Object.entries(elementsToUpdate).forEach(([elementId, textKey]) => {
+      const element = document.getElementById(elementId);
+      if (element) {
+        element.textContent = texts[currentLanguage][textKey];
+      }
+    });
+
+    // Actualizar el texto de cada proyecto
+    texts[currentLanguage].projects.forEach(
+      ({ idTitle, title, idBody, body }) => {
+        const projectTitleElement = document.getElementById(idTitle);
+        const projectBodyElement = document.getElementById(idBody);
+
+        if (projectTitleElement) {
+          projectTitleElement.textContent = title;
+        }
+
+        if (projectBodyElement) {
+          projectBodyElement.textContent = body;
+        }
+      }
+    );
+  }
+
+  async function changeLanguage() {
+    currentLanguage = currentLanguage === "en" ? "es" : "en";
+    updateTexts();
+  }
+
+  document.addEventListener("DOMContentLoaded", async function () {
+    await loadTexts(); // Cargar textos al inicio
+    const button = document.getElementById("butonIdioma");
+    button.addEventListener("click", changeLanguage);
+  });
+</script>
+
+<style>
+  #butonIdioma {
+    display: flex;
+    align-items: center;
+    padding: 10px 15px;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: transparent;
+    border: none;
+  }
+
+  #butonIdioma .flag {
+    width: 20px;
+    height: 15px;
+    margin-right: 8px;
+    border-radius: 2px;
+    overflow: hidden;
+  }
+
+  #butonIdioma .text {
+    color: #333;
+    font-weight: bold;
+  }
+</style>

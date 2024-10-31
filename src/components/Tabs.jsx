@@ -176,7 +176,7 @@ const SkillsTab = () => {
           className={activeTab === "database" ? "active" : ""}
           onClick={() => handleTabChange("database")}
         >
-          Base de Datos
+          DB
         </button>
         {/* Agrega más pestañas según sea necesario */}
       </div>

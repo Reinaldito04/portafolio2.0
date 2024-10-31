@@ -69,7 +69,7 @@ const projects = [
   }
 ];
 
-function generateId(title) {
+function generateId(title : string) {
   return title
     .toLowerCase() // Convertir a minúsculas
     .replace(/[^a-z0-9\s]/g, '') // Eliminar caracteres especiales
@@ -82,7 +82,7 @@ function generateId(title) {
 
 <section id="project">
   <div class="container">
-    <h2 class="text-center">Proyectos</h2>
+    <h2 class="text-center" id="proyect-title">Proyectos</h2>
     <div class="container mt-2">
       <div class="row">
         {projects.map((project) => (
