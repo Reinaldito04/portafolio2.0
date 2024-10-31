@@ -11,12 +11,21 @@
   "changeLanguage": "🇺🇸",
   "aboutMeText": "Hola, soy Reinaldo Bellorin, un apasionado desarrollador web graduado en TSU Informática. Me especializo en el desarrollo utilizando Python, mi lenguaje favorito, para crear aplicaciones web eficientes y poderosas. Además, encuentro inspiración en la música de Gustavo Cerati, cuyas melodías me acompañan en mi proceso creativo. Mi lema es 'no tengo enemigos', una filosofía que refleja mi enfoque colaborativo y positivo hacia los desafíos. Estoy emocionado por contribuir a proyectos innovadores y seguir creciendo como profesional en el mundo del desarrollo web. ",
   "projects": [
+   
+    
+
     {
       "idTitle":"sistema-administrativo-para-la-gestin-de-inmobiliaria-la-plata",
       "idBody": "sistema-administrativo-para-la-gestin-de-inmobiliaria-la-plata-body",
       
       "title": "Sistema Administrativo para la gestión de inmobiliaria La Plata",
       "body": "Este sistema permite la gestión integral de una inmobiliaria, facilitando el manejo de pagos, deudas, contratos, inquilinos y propiedades. Los administradores pueden registrar y actualizar información de los inmuebles, gestionar contratos de alquiler, llevar un control detallado de los pagos realizados por los inquilinos y de las deudas pendientes. Además, cuenta con reportes automatizados y un módulo para la renovación de contratos."
+    },
+    {
+      "idTitle":"sistema-de-salud-y-seguridad-en-el-trabajo",
+      "idBody": "sistema-de-salud-y-seguridad-en-el-trabajo-body",
+      "title": "Sistema De Salud y Seguridad en el Trabajo",
+      "body" : "Este sistema facilita la gestión de los procesos de seguridad en los diferentes departamentos, permitiendo el análisis de desviaciones, correcciones y otros aspectos relacionados."
     },
     {
       "idTitle":"app-de-tareas",

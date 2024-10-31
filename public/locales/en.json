@@ -13,6 +13,12 @@
   "aboutMeText" : "Hello, I am Reinaldo Bellorin, a passionate web developer with a degree in Computer Science (TSU). I specialize in development using Python, my favorite language, to create efficient and powerful web applications. I also find inspiration in the music of Gustavo Cerati, whose melodies accompany me in my creative process. My motto is 'I have no enemies,' a philosophy that reflects my collaborative and positive approach to challenges. I am excited to contribute to innovative projects and continue growing as a professional in the world of web development.",
   "projects": [
     {
+      "idTitle":"sistema-de-salud-y-seguridad-en-el-trabajo",
+      "idBody": "sistema-de-salud-y-seguridad-en-el-trabajo-body",
+      "title": "Occupational Health and Safety System",
+      "body" : "This system facilitates the management of security processes in the different departments, allowing the analysis of deviations, corrections and other related aspects."
+    },
+    {
       "idTitle": "sistema-administrativo-para-la-gestin-de-inmobiliaria-la-plata",
       "idBody":"sistema-administrativo-para-la-gestin-de-inmobiliaria-la-plata-body",
       "title": "Administrative System for Real Estate Management La Plata",

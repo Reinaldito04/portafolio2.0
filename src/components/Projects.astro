@@ -2,20 +2,40 @@
 import Card from "./Card.astro";
 
 const projects = [
-{
-  title: "Sistema Administrativo para la gestión de inmobiliaria La Plata",
-  body: "Este sistema permite la gestión integral de una inmobiliaria, facilitando el manejo de pagos, deudas, contratos, inquilinos y propiedades. Los administradores pueden registrar y actualizar información de los inmuebles, gestionar contratos de alquiler, llevar un control detallado de los pagos realizados por los inquilinos y de las deudas pendientes. Además, cuenta con reportes automatizados y un módulo para la renovación de contratos.",
-  repo: "https://github.com/Reinaldito04/plataSystem",
-  img: "54shots_so.png",
-  repoBackend :'https://github.com/Reinaldito04/onmiplataBackend',
-  tecnologies: ["/svg/electron.svg", "/svg/react.svg", "/svg/python.svg", "/svg/sqlite.svg"]
-},
+  {
+    title: "Sistema de Salud y Seguridad en el Trabajo",
+    body: "Este sistema facilita la gestión de los procesos de seguridad en los diferentes departamentos, permitiendo el análisis de desviaciones, correcciones y otros aspectos relacionados.",
+    img: "265shots_so.png",
+    repo: "https://github.com/Reinaldito04/SSST",
+    tecnologies: [
+      "/svg/python.svg",
+      "/svg/sqlite.svg",
+      "/svg/nextjs.svg",
+      "/svg/react.svg",
+      "/svg/fastapi.svg",
+    ],
+    repoBackend: "https://github.com/Reinaldito04/ssstBackend",
+  },
+
+  {
+    title: "Sistema Administrativo para la gestión de inmobiliaria La Plata",
+    body: "Este sistema permite la gestión integral de una inmobiliaria, facilitando el manejo de pagos, deudas, contratos, inquilinos y propiedades. Los administradores pueden registrar y actualizar información de los inmuebles, gestionar contratos de alquiler, llevar un control detallado de los pagos realizados por los inquilinos y de las deudas pendientes. Además, cuenta con reportes automatizados y un módulo para la renovación de contratos.",
+    repo: "https://github.com/Reinaldito04/plataSystem",
+    img: "54shots_so.png",
+    repoBackend: "https://github.com/Reinaldito04/onmiplataBackend",
+    tecnologies: [
+      "/svg/electron.svg",
+      "/svg/react.svg",
+      "/svg/python.svg",
+      "/svg/sqlite.svg",
+    ],
+  },
   {
     title: "App de Tareas",
     body: "Una app Movil realizada con Dart/Flutter, conectada con Firebase para acceder con Google y almacenar los datos de sesión, permite añadir sus tareas, modificarlas y compartirlas con demás usuarios mediante su correo electrónico. Además, está conectada a un backend realizado en Python para el manejo de las tareas y diversos datos.",
     repo: "https://github.com/Reinaldito04/Flutter-Todo-App",
     img: "325shots_so.png",
-    tecnologies: ["/svg/fastapi.svg", "/svg/flutter.svg", "/svg/dart.svg"]
+    tecnologies: ["/svg/fastapi.svg", "/svg/flutter.svg", "/svg/dart.svg"],
   },
   {
     title: "Portafolio Web de Ilustrador Digital",
@@ -23,61 +43,59 @@ const projects = [
     repo: "https://github.com/Reinaldito04/portfolio-2024/tree/main/portfolioweb",
     img: "259shots_so.png",
     tecnologies: ["/svg/nextjs.svg", "/svg/react.svg", "/svg/nodejs.svg"],
-    Despliegue: "https://cesarlista.vercel.app/"
+    Despliegue: "https://cesarlista.vercel.app/",
   },
   {
     title: "Correo Temporal",
     body: "Una aplicación de Frontend conectada a una API que proporciona correos temporales, permitiendo recibir correos electrónicos de varias direcciones en tiempo real.",
     repo: "https://github.com/Reinaldito04/mailtempclient",
     img: "815shots_so.png",
-    tecnologies: ["/svg/nextjs.svg", "/svg/react.svg"]
+    tecnologies: ["/svg/nextjs.svg", "/svg/react.svg"],
   },
   {
     title: "App de Consultas Médicas",
     body: "Una aplicación de escritorio para el control de consultas, historias y placas médicas. Permite al usuario (doctor) tener control de todos sus pacientes registrados, además de su respectiva información.",
     repo: "https://github.com/Reinaldito04/App-Consultas-y-Historias-Medicas",
     img: "753shots_so.png",
-    tecnologies: ["/svg/python.svg", "/svg/qt.svg"]
+    tecnologies: ["/svg/python.svg", "/svg/qt.svg"],
   },
   {
     title: "App para Horarios Escolares",
     body: "Una aplicación de escritorio para el control de horarios escolares del Instituto Universitario de Administración Industrial (IUTA). Permite mantener el control de los profesores, aulas y sesiones de las diversas sedes, entre otras funciones.",
     repo: "https://github.com/Reinaldito04/IUTA----HORARIOS",
     img: "489shots_so.png",
-    tecnologies: ["/svg/python.svg", "/svg/qt.svg", "/svg/pdf.svg"]
+    tecnologies: ["/svg/python.svg", "/svg/qt.svg", "/svg/pdf.svg"],
   },
   {
     title: "API de Divisas",
     body: "Una API realizada para la recolección directa con la web del Banco Central de Venezuela, permitiendo a los usuarios obtener la cotización de diferentes divisas.",
     repo: "https://github.com/Reinaldito04/API-bcv",
     img: "339shots_so.png",
-    tecnologies: ["/svg/python.svg", "/svg/fastapi.svg"]
+    tecnologies: ["/svg/python.svg", "/svg/fastapi.svg"],
   },
   {
     title: "Periódico Escolar",
     body: "Periódico Escolar con la capacidad de subir noticias, acontecimientos importantes, curiosidades, etc., además cuenta con información referente a la institución.",
     repo: "https://github.com/Reinaldito04/Periodico",
     img: "periodico.png",
-    tecnologies: ["/svg/php.svg", "/svg/jquery.svg", "/svg/boostrap.svg"]
+    tecnologies: ["/svg/php.svg", "/svg/jquery.svg", "/svg/boostrap.svg"],
   },
   {
     title: "Convertidor de Divisas",
     body: "Esta aplicación te permite convertir diversas monedas, usando los datos actualizados de la API de Divisas.",
     repo: "https://github.com/Reinaldito04/Convertidor",
     img: "204shots_so.png",
-    tecnologies: ["/svg/nextjs.svg", "/svg/react.svg"]
-  }
+    tecnologies: ["/svg/nextjs.svg", "/svg/react.svg"],
+  },
 ];
 
-function generateId(title : string) {
+function generateId(title: string) {
   return title
     .toLowerCase() // Convertir a minúsculas
-    .replace(/[^a-z0-9\s]/g, '') // Eliminar caracteres especiales
-    .replace(/\s+/g, '-') // Reemplazar espacios con guiones
+    .replace(/[^a-z0-9\s]/g, "") // Eliminar caracteres especiales
+    .replace(/\s+/g, "-") // Reemplazar espacios con guiones
     .trim(); // Eliminar espacios al principio y al final
 }
-
-
 ---
 
 <section id="project">
@@ -85,20 +103,22 @@ function generateId(title : string) {
     <h2 class="text-center" id="proyect-title">Proyectos</h2>
     <div class="container mt-2">
       <div class="row">
-        {projects.map((project) => (
-          <div class="col-md-6">
-           <Card
-              idTitle={generateId(project.title)} 
-              title={project.title}
-              body={project.body}
-              repo={project.repo}
-              img={project.img}
-              tecnologies={project.tecnologies}
-              Despliegue={project.Despliegue}
-              repoBackend={project.repoBackend}
-            />
-          </div>
-        ))}
+        {
+          projects.map((project) => (
+            <div class="col-md-6">
+              <Card
+                idTitle={generateId(project.title)}
+                title={project.title}
+                body={project.body}
+                repo={project.repo}
+                img={project.img}
+                tecnologies={project.tecnologies}
+                Despliegue={project.Despliegue}
+                repoBackend={project.repoBackend}
+              />
+            </div>
+          ))
+        }
       </div>
     </div>
   </div>
